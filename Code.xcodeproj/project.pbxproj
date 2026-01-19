@@ -533,7 +533,7 @@
 		945D4F562B50F54600DE0DBA /* VimModeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D4F542B50F54600DE0DBA /* VimModeLabel.swift */; };
 		945D4F582B50F55800DE0DBA /* VimKeyBufferLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D4F572B50F55800DE0DBA /* VimKeyBufferLabel.swift */; };
 		945D4F592B50F55800DE0DBA /* VimKeyBufferLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D4F572B50F55800DE0DBA /* VimKeyBufferLabel.swift */; };
-		9469AC9C26A33D52003F569F /* php.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9469AC9A26A33D19003F569F /* php.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9469AC9C26A33D52003F569F /* php.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9469AC9A26A33D19003F569F /* php.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		946C67832C33C03400100F3F /* SwiftWS in Frameworks */ = {isa = PBXBuildFile; productRef = 946C67822C33C03400100F3F /* SwiftWS */; };
 		946DAB9E2BBD2F9600E73257 /* TreeSitterJavaScriptRunestone in Frameworks */ = {isa = PBXBuildFile; productRef = 946DAB9D2BBD2F9600E73257 /* TreeSitterJavaScriptRunestone */; };
 		946DABA42BBD98BB00E73257 /* TreeSitterPythonRunestone in Frameworks */ = {isa = PBXBuildFile; productRef = 946DABA32BBD98BB00E73257 /* TreeSitterPythonRunestone */; };
@@ -750,16 +750,16 @@
 		94C893C02793D2FB00DFBF29 /* openssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94D721E3268DBB94007A63BD /* openssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94C893E2279D09D400DFBF29 /* SettingsKeyboardShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C893E1279D09D400DFBF29 /* SettingsKeyboardShortcuts.swift */; };
 		94C893E6279D0C3000DFBF29 /* shortcutsMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C893E5279D0C3000DFBF29 /* shortcutsMapping.swift */; };
-		94CF58D1265E4B3000CB6A4B /* ar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58BD265E4A9E00CB6A4B /* ar.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D2265E4B3000CB6A4B /* link.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58BE265E4A9E00CB6A4B /* link.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D3265E4B3000CB6A4B /* libLLVM.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58BF265E4A9E00CB6A4B /* libLLVM.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D4265E4B3000CB6A4B /* lld.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C0265E4A9E00CB6A4B /* lld.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D5265E4B3000CB6A4B /* clang.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C1265E4A9E00CB6A4B /* clang.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D6265E4B3000CB6A4B /* nm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C2265E4A9E00CB6A4B /* nm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D7265E4B3000CB6A4B /* dis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C3265E4A9E00CB6A4B /* dis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D8265E4B3000CB6A4B /* llc.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C4265E4A9E00CB6A4B /* llc.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58D9265E4B3000CB6A4B /* lli.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C5265E4A9E00CB6A4B /* lli.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94CF58DA265E4B3000CB6A4B /* opt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C6265E4A9E00CB6A4B /* opt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D1265E4B3000CB6A4B /* ar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58BD265E4A9E00CB6A4B /* ar.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D2265E4B3000CB6A4B /* link.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58BE265E4A9E00CB6A4B /* link.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D3265E4B3000CB6A4B /* libLLVM.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58BF265E4A9E00CB6A4B /* libLLVM.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D4265E4B3000CB6A4B /* lld.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C0265E4A9E00CB6A4B /* lld.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D5265E4B3000CB6A4B /* clang.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C1265E4A9E00CB6A4B /* clang.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D6265E4B3000CB6A4B /* nm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C2265E4A9E00CB6A4B /* nm.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D7265E4B3000CB6A4B /* dis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C3265E4A9E00CB6A4B /* dis.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D8265E4B3000CB6A4B /* llc.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C4265E4A9E00CB6A4B /* llc.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58D9265E4B3000CB6A4B /* lli.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C5265E4A9E00CB6A4B /* lli.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CF58DA265E4B3000CB6A4B /* opt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94CF58C6265E4A9E00CB6A4B /* opt.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94CF58DD265E4E0F00CB6A4B /* URL+isDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF58DC265E4E0F00CB6A4B /* URL+isDirectory.swift */; };
 		94CF58DF265E51B100CB6A4B /* ClangLib in Resources */ = {isa = PBXBuildFile; fileRef = 94CF58DE265E51B100CB6A4B /* ClangLib */; };
 		94CF58E1265E8A4B00CB6A4B /* wasm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF58E0265E8A4B00CB6A4B /* wasm.swift */; };
@@ -3420,8 +3420,9 @@
 		944EEBE82563C381009D77FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					9419692E280316C7008AAEB2 = {
 						LastSwiftMigration = 1330;
@@ -4027,7 +4028,7 @@
 				CURRENT_PROJECT_VERSION = 87;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"CodeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
@@ -4047,10 +4048,9 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.12.0;
 				OTHER_SWIFT_FLAGS = "-Xcc -Wno-incomplete-umbrella";
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				STRIP_STYLE = "non-global";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeApp/Utilities/CodeUI-Bridging-Header.h";
@@ -4069,12 +4069,12 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Code App.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 87;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"CodeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
@@ -4095,10 +4095,9 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.12.0;
 				OTHER_SWIFT_FLAGS = "-Xcc -Wno-incomplete-umbrella";
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore thebaselab.VS-Code";
-				STRIP_STYLE = "non-global";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeApp/Utilities/CodeUI-Bridging-Header.h";
@@ -4117,8 +4116,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 87;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_BITCODE = NO;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -4133,7 +4134,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code.extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -4150,11 +4151,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = NodeExtension/extension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 87;
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_BITCODE = NO;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -4169,9 +4172,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code.extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore thebaselab.VS-Code.extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NodeExtension/NodeRunner/extension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -4216,8 +4219,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H4Q6WN7NV5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4237,6 +4242,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -4278,8 +4284,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H4Q6WN7NV5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4293,6 +4301,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -4302,7 +4311,6 @@
 		944EEC002563C386009D77FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Iconv2;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -4312,8 +4320,9 @@
 				CURRENT_PROJECT_VERSION = 87;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"CodeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_BITCODE = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4332,10 +4341,9 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.12.0;
 				OTHER_SWIFT_FLAGS = "-Xcc -Wno-incomplete-umbrella";
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				STRIP_STYLE = "non-global";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeApp/Utilities/Code-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -4348,18 +4356,18 @@
 		944EEC012563C386009D77FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Iconv2;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Code App.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 87;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"CodeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_BITCODE = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4379,10 +4387,9 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.12.0;
 				OTHER_SWIFT_FLAGS = "-Xcc -Wno-incomplete-umbrella";
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore thebaselab.VS-Code";
-				STRIP_STYLE = "non-global";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeApp/Utilities/Code-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -4398,11 +4405,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 69R94YG49H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = thebaselab.CodeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -4418,11 +4424,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 69R94YG49H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = thebaselab.CodeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "ThalesMMS.VS-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
