@@ -18,6 +18,8 @@ struct ExplorerFileTree: View {
         (WorkSpaceStorage.FileItemRepresentable, WorkSpaceStorage.FileItemRepresentable) -> Void
 
     @State var showsDirectoryPicker = false
+    @State var showsSetWorkspaceFolderDialog = false
+    @State var workspaceFolderPathInput = ""
 
     func filteredFileItemRepresentable(_ item: WorkSpaceStorage.FileItemRepresentable)
         -> WorkSpaceStorage.FileItemRepresentable
@@ -204,6 +206,13 @@ struct ExplorerFileTree: View {
             }
         }
 
+        let ACTION_SET_WORKSPACE_FOLDER = UIAction(
+            title: NSLocalizedString("Set Workspace Folder", comment: ""),
+            image: UIImage(systemName: "folder.badge.gearshape")!
+        ) { _ in
+            showsSetWorkspaceFolderDialog = true
+        }
+
         let ACTION_ASSIGN_AS_WORKSPACE_FOLDER = UIAction(
             title: NSLocalizedString("Assign as workspace folder", comment: ""),
             image: UIImage(systemName: "folder.badge.gear")!
@@ -235,10 +244,11 @@ struct ExplorerFileTree: View {
 
         let uiMenu = {
             if item.id == App.workSpaceStorage.currentDirectory.id {
+                let sshActions = App.workSpaceStorage.remoteConnected ? [ACTION_UPLOAD, ACTION_SET_WORKSPACE_FOLDER] : []
                 return UIMenu(
                     children: [
                         ACTION_NEW_FILE, ACTION_NEW_FOLDER,
-                    ] + (App.workSpaceStorage.remoteConnected ? [ACTION_UPLOAD] : []))
+                    ] + sshActions)
             } else if item.subFolderItems == nil {
                 let topActions = UIMenu(
                     title: "", options: .displayInline,
@@ -315,5 +325,93 @@ struct ExplorerFileTree: View {
             }
         }
         .padding(.horizontal, 10)
+        .alert("Set Workspace Folder", isPresented: $showsSetWorkspaceFolderDialog) {
+            Button("Current Terminal Folder") {
+                setCurrentTerminalFolderAsWorkspace()
+            }
+            Button("Type Path") {
+                workspaceFolderPathInput = getCurrentTerminalPath()
+                showsDirectoryPicker = true
+            }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("Choose how you want to set the workspace folder:")
+        }
+        .sheet(isPresented: $showsDirectoryPicker) {
+            NavigationView {
+                VStack {
+                    Text("Enter Workspace Folder Path")
+                        .font(.headline)
+                        .padding()
+                    
+                    TextField("Path", text: $workspaceFolderPathInput)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding(.horizontal)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                    
+                    Spacer()
+                    
+                    HStack {
+                        Button("Cancel") {
+                            showsDirectoryPicker = false
+                        }
+                        .foregroundColor(.red)
+                        
+                        Spacer()
+                        
+                        Button("Set") {
+                            setWorkspaceFolderFromPath(workspaceFolderPathInput)
+                            showsDirectoryPicker = false
+                        }
+                        .disabled(workspaceFolderPathInput.isEmpty)
+                    }
+                    .padding()
+                }
+                .navigationTitle("Set Workspace Folder")
+                .navigationBarTitleDisplayMode(.inline)
+            }
+        }
+    }
+    
+    private func getCurrentTerminalPath() -> String {
+        guard let terminal = App.terminalManager.activeTerminal,
+              let currentDir = terminal.executor?.currentWorkingDirectory else {
+            return ""
+        }
+        
+        if App.workSpaceStorage.remoteConnected {
+            return currentDir.absoluteString
+        } else {
+            return currentDir.path
+        }
+    }
+    
+    private func setCurrentTerminalFolderAsWorkspace() {
+        guard let terminal = App.terminalManager.activeTerminal,
+              let currentDir = terminal.executor?.currentWorkingDirectory else {
+            App.notificationManager.showErrorMessage("No active terminal or unable to get current directory")
+            return
+        }
+        
+        App.loadFolder(url: currentDir)
+    }
+    
+    private func setWorkspaceFolderFromPath(_ path: String) {
+        guard !path.isEmpty else { return }
+        
+        let url: URL
+        if App.workSpaceStorage.remoteConnected {
+            if path.hasPrefix("sftp://") {
+                url = URL(string: path)!
+            } else {
+                let currentHost = App.workSpaceStorage.remoteHost ?? ""
+                url = URL(string: "sftp://\(currentHost)\(path.hasPrefix("/") ? "" : "/")\(path)")!
+            }
+        } else {
+            url = URL(fileURLWithPath: path)
+        }
+        
+        App.loadFolder(url: url)
     }
 }
